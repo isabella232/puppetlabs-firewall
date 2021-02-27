@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
-## [v2.8.1](https://github.com/puppetlabs/puppetlabs-firewall/tree/v2.8.1) (2021-02-08)
+## [v3.0.0](https://github.com/puppetlabs/puppetlabs-firewall/tree/v3.0.0) (2021-02-27)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-firewall/compare/v2.8.1...v3.0.0)
+
+### Changed
+
+- pdksync - Remove Puppet 5 from testing and bump minimal version to 6.0.0 [\#972](https://github.com/puppetlabs/puppetlabs-firewall/pull/972) ([carabasdaniel](https://github.com/carabasdaniel))
+
+## [v2.8.1](https://github.com/puppetlabs/puppetlabs-firewall/tree/v2.8.1) (2021-02-09)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-firewall/compare/v2.8.0...v2.8.1)
 
@@ -77,11 +85,13 @@ All notable changes to this project will be documented in this file. The format 
 - Add iptables --hex-string support to firewall resource [\#907](https://github.com/puppetlabs/puppetlabs-firewall/pull/907) ([alexconrey](https://github.com/alexconrey))
 - Add random\_fully and rpfilter support [\#892](https://github.com/puppetlabs/puppetlabs-firewall/pull/892) ([treydock](https://github.com/treydock))
 - \(MODULES-7800\) Add the ability to specify iptables connection tracking helpers. [\#890](https://github.com/puppetlabs/puppetlabs-firewall/pull/890) ([jimmyt86](https://github.com/jimmyt86))
+- Add support for Debian Unstable [\#876](https://github.com/puppetlabs/puppetlabs-firewall/pull/876) ([martialblog](https://github.com/martialblog))
 - Support conntrack module [\#872](https://github.com/puppetlabs/puppetlabs-firewall/pull/872) ([haught](https://github.com/haught))
 
 ### Fixed
 
 - \(maint\) Use fact.flush only when available [\#906](https://github.com/puppetlabs/puppetlabs-firewall/pull/906) ([Filipovici-Andrei](https://github.com/Filipovici-Andrei))
+- \(MODULES-10358\) - Clarification added to Boolean validation checks [\#886](https://github.com/puppetlabs/puppetlabs-firewall/pull/886) ([david22swan](https://github.com/david22swan))
 - Merge and remove duplicate README file, lint code snippets [\#878](https://github.com/puppetlabs/puppetlabs-firewall/pull/878) ([runejuhl](https://github.com/runejuhl))
 
 ## [v2.2.0](https://github.com/puppetlabs/puppetlabs-firewall/tree/v2.2.0) (2019-12-09)
@@ -90,14 +100,12 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Added
 
-- Add support for Debian Unstable [\#876](https://github.com/puppetlabs/puppetlabs-firewall/pull/876) ([martialblog](https://github.com/martialblog))
 - \(FM-8673\) - Support added for CentOS 8 [\#873](https://github.com/puppetlabs/puppetlabs-firewall/pull/873) ([david22swan](https://github.com/david22swan))
 - FM-8400 - add debian10 support [\#862](https://github.com/puppetlabs/puppetlabs-firewall/pull/862) ([lionce](https://github.com/lionce))
 - FM-8219 - Convert to litmus [\#855](https://github.com/puppetlabs/puppetlabs-firewall/pull/855) ([lionce](https://github.com/lionce))
 
 ### Fixed
 
-- \(MODULES-10358\) - Clarification added to Boolean validation checks [\#886](https://github.com/puppetlabs/puppetlabs-firewall/pull/886) ([david22swan](https://github.com/david22swan))
 - Change - Avoid puppet failures on windows nodes [\#874](https://github.com/puppetlabs/puppetlabs-firewall/pull/874) ([blackknight36](https://github.com/blackknight36))
 - Fix parsing iptables rules with hyphen in comments [\#861](https://github.com/puppetlabs/puppetlabs-firewall/pull/861) ([Hexta](https://github.com/Hexta))
 
